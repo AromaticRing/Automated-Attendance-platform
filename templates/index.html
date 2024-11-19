@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Attendance System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Attendance System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/static/style.css">
 </head>
-<body>
-    <h1>Face Recognition Attendance System</h1>
-    <video id="video" width="640" height="480" autoplay></video>
-    <button id="captureButton">Capture</button>
-    <button id="viewAttendance">View Attendance</button>
-    <pre id="attendanceList"></pre>
 
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+    <div class="container text-center p-4 bg-white shadow rounded">
+        <h1 class="display-4 mb-4">Face Recognition Attendance System</h1>
+        
+        <!-- Video Frame -->
+        <div class="d-flex justify-content-center mb-4">
+            <video id="video" class="border rounded" width="640" height="480" autoplay></video>
+        </div>
+
+        <!-- Buttons -->
+        <div class="mb-4">
+            <button id="captureButton" class="btn btn-primary btn-lg mr-2">Capture</button>
+            <button id="viewAttendance" class="btn btn-secondary btn-lg">View Attendance</button>
+        </div>
+
+        <!-- Attendance List -->
+        <div class="text-left">
+            <h4 class="mb-2">Attendance List</h4>
+            <pre id="attendanceList" class="p-3 border rounded bg-light"></pre>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
     <script src="/static/script.js"></script>
 </body>
+
 </html>
