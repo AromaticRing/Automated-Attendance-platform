@@ -31,13 +31,9 @@ This project is an AI-driven attendance system that uses face recognition to mar
    
 3. Configure the database (if applicable):
    - Set up an SQLite/MySQL database.
-   - Update the connection parameters in the `config.py` file.
 
 4. Train the model with user images:
    - Add user images to the `dataset` folder (create separate folders for each person, e.g., `dataset/person1`).
-   - Run the training script:
-     bash
-     $ python train_model.py
 
 5. Start the application:
    bash
